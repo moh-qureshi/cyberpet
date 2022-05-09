@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="navbar">
+        <ul id="time-bar" class="navbar">
+            <li></li>
+            <li id="time">12:00</li>
+            <li id="days">Day 0</li>
+        </ul>
+        <ul id="stats-bar" class="navbar">
+            <li id="health">100</li>
+            <li id="energy">100</li>
+            <li id="hunger">100</li>
+            <li id="thirst">100</li>
+        </ul>
+    </div>
+    <div id="navbar-img">
+        <ul id="time-bar-img">
+            <li><img id="day-night-img" src="/images/day.png"></li>
+            <li><img src="/images/time.png" id="time-img"></li>
+            <li><img src="/images/days.png"></li>
+        </ul>
+        <ul id="stats-bar-img">
+            <li><img src="/images/health.png"></li>
+            <li><img src="/images/energy.png"></li>
+            <li><img src="/images/hunger.png"></li>
+            <li><img src="/images/thirst.png" id="thirst-img"></li>
+        </ul>
+    </div>
+    <div id="main-screen">
+        <div id="inventory-section">
+            <img src="/images/inventory.png">
+            <ul>
+                <li>Fishing Rod</li>
+                <li>Water Bottle</li>
+                <li id="fish-inventory"></li>
+                <li></li>
+            </ul>
+        </div>
+        <img id="main-img" src="/images/strandedwithfire.jpg">
+        <div id="notification-section">
+            <div id="fish-caught">
+            <h1 id="fish-caught-text">You caught a fish</h1>
+            <img src="/images/fish.png">
+            </div>
+        </div>
+    </div>
+    <div id="buttons">
+        <button class="button">Rest</button>
+        <button class="button" onclick="fish()">Fish</button>
+        <button class="button" onclick="eatFish()">Eat</button>
+        <button class="button">Drink</button>
+    </div>
+    </body>
+    <script src="main.js"></script>
+</html>
