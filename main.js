@@ -131,10 +131,9 @@ function fish(){
         mainImage.src = "/images/strandednight.JPG"
     }
     let fishGenerator = Math.round(Math.random()* 1) + 1
-    console.log(fishGenerator)
+   
     switch(fishGenerator){
         case 1:
-            console.log("You got a fish!")
             fishInventory++
             fishBackpack.innerText = `Fish x ${fishInventory}`
             fishCaughtNotification.style.display = "initial"
@@ -148,7 +147,6 @@ function fish(){
             fishNotification()
             break;
     }
-    console.log(fishInventory)
 }
 function eatFish(){
     if(fishInventory > 1){
@@ -169,4 +167,13 @@ function fishNotification(){
         fishCaughtNotification.classList.remove("notification-animation")
         
     },5000)
+}
+
+function drinkWater(){
+    character.thirst += 5
+    thirst.innerText = character.thirst
+}
+function getRest(){
+    character.energy += 20
+    energy.innerText = character.energy
 }
